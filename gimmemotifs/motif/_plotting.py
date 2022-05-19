@@ -112,6 +112,7 @@ def plot_logo(
         logo.ax.set_title(self.id, fontsize=16)
 
     if fname:
+        plt.tight_layout()
         plt.savefig(fname, dpi=300)
         plt.close()
     else:
