@@ -32,6 +32,7 @@ class Homer(MotifProgram):
 
         Combine default and user-defined parameters.
         """
+
         prm = super()._parse_params(params, needs_background=True)
         prm["strand"] = ""
         if prm["single"]:
